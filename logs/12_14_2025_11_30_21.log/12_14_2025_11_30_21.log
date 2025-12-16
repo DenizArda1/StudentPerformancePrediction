@@ -1,0 +1,47 @@
+[ 2025-12-14 11:30:22,462 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-12-14 11:30:22,471 ] 97 werkzeug - INFO -  * Debugger PIN: 713-699-141
+[ 2025-12-14 11:30:24,330 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 11:30:24,336 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 11:30:24,339 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 11:30:24,343 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 11:30:24,345 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 11:30:24,345 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 11:30:24,345 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 11:30:24,346 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 11:30:24,355 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 11:30:24,359 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:24] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 11:30:25,600 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 11:30:25,602 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 11:30:25,604 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 11:30:25,607 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 11:30:25,609 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 11:30:25,609 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 11:30:25,609 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 11:30:25,610 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 11:30:25,618 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 11:30:25,620 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:25] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 11:30:29,471 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:29] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 11:30:34,171 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 11:30:34,174 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 11:30:34,177 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 11:30:34,183 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 11:30:34,186 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 11:30:34,186 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 11:30:34,186 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 11:30:34,186 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 11:30:34,196 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 11:30:34,198 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:34] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 11:30:36,481 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:36] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 11:30:38,018 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:38] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-14 11:30:43,613 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 11:30:43,616 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 11:30:43,620 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 11:30:43,625 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 11:30:43,627 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 11:30:43,627 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 11:30:43,627 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 11:30:43,628 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 11:30:43,636 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 11:30:43,638 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:30:43] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 11:31:08,166 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:31:08] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 11:33:24,858 ] 97 werkzeug - INFO -  * Detected change in '/Users/denizardasanal/StudentPerformancePrediction/src/pipeline/training_pipeline.py', reloading

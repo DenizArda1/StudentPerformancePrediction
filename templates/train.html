@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Training Status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        h1 { color: #333; margin-bottom: 20px; }
+
+        .score-box {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #23a6d5;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #23a6d5;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .error-box {
+            color: #e73c7e;
+            font-weight: bold;
+            background: #ffe6e6;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #e73c7e;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #23a6d5, #23d5ab);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-home:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(35, 213, 171, 0.4); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        {% if message %}
+            <i class="fas fa-check-circle fa-5x" style="color: #23d5ab; margin-bottom: 20px;"></i>
+            <h1>{{ message }}</h1>
+
+            <p>New Model Performance (R2 Score):</p>
+            <div class="score-box">
+                {{ score }}
+            </div>
+        {% endif %}
+
+        {% if error %}
+            <i class="fas fa-exclamation-triangle fa-5x" style="color: #e73c7e; margin-bottom: 20px;"></i>
+            <h1>Error occurred while training</h1>
+            <div class="error-box">
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <br>
+        <a href="/" class="btn-home">
+            <i class="fas fa-home"></i> Return to main page
+        </a>
+    </div>
+
+</body>
+</html>

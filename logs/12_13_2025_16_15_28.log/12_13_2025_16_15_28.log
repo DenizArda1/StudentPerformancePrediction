@@ -1,0 +1,11 @@
+[ 2025-12-13 16:15:38,711 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-13 16:15:38,712 ] 29 root - INFO - Reading data is successful
+[ 2025-12-13 16:15:38,713 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-13 16:15:38,715 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-13 16:15:38,716 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-13 16:15:38,716 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-13 16:15:38,716 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-13 16:15:38,717 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-13 16:15:38,721 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-13 16:15:38,722 ] 29 root - INFO - Splitting train and test data
+[ 2025-12-13 16:15:42,920 ] 53 root - INFO - Best model found

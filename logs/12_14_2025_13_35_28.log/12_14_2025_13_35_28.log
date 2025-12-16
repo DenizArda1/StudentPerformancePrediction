@@ -1,0 +1,27 @@
+[ 2025-12-14 13:35:29,062 ] 1584 matplotlib.font_manager - INFO - generated new fontManager
+[ 2025-12-14 13:35:29,175 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+[ 2025-12-14 13:35:29,175 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-12-14 13:35:45,096 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:35:45] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 13:35:47,488 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:35:47] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-14 13:35:54,535 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 13:35:54,540 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:35:54] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 13:36:05,712 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:36:05] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 13:36:07,134 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:36:07] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-14 13:36:15,212 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-14 13:36:15,212 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-14 13:36:15,212 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-14 13:36:15,235 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-14 13:36:15,241 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-14 13:36:15,242 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999999)
+[ 2025-12-14 13:36:15,247 ] 730 shap - INFO - phi = array([-24.72169623,  -8.25633359,  -3.47816188,  -3.47630711,
+         0.        ,   0.        ,   0.        ,   0.        ,
+        -0.47237849,  -0.20079646,   0.        ,   0.        ,
+         0.        ,   0.        ,   0.        ,   0.67279659,
+         0.71303312,  -1.09188656,  -1.08679866])
+[ 2025-12-14 13:36:15,249 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:36:15] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-14 13:36:25,422 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 13:36:25,424 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 13:36:25] "GET /train HTTP/1.1" 200 -

@@ -1,0 +1,35 @@
+[ 2025-12-14 17:02:20,940 ] 1584 matplotlib.font_manager - INFO - generated new fontManager
+[ 2025-12-14 17:02:21,056 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+[ 2025-12-14 17:02:21,056 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-12-14 17:02:25,059 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 17:02:25] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 17:02:27,804 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 17:02:27,809 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 17:02:27,814 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 17:02:27,819 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 17:02:27,822 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 17:02:27,822 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 17:02:27,822 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 17:02:27,822 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 17:02:27,834 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 17:02:27,837 ] 30 root - INFO - Splitting train and test data
+[ 2025-12-14 17:02:40,129 ] 54 root - INFO - Best model found
+[ 2025-12-14 17:02:40,130 ] 57 root - INFO - Creating SHAP explainer for interpretability
+[ 2025-12-14 17:02:40,135 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 17:02:40] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 17:02:42,446 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 17:02:42] "GET / HTTP/1.1" 200 -
+[ 2025-12-14 17:02:47,392 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 17:02:47] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-14 17:02:58,979 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-14 17:02:58,979 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-14 17:02:58,979 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-14 17:02:59,003 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-14 17:02:59,006 ] 648 shap - INFO - np.sum(w_aug) = np.float64(18.999999999999996)
+[ 2025-12-14 17:02:59,006 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999996)
+[ 2025-12-14 17:02:59,011 ] 730 shap - INFO - phi = array([-15.42306251,  -0.16319897,  -3.46276776,  -3.45910158,
+         0.        ,   0.        ,   0.        ,   0.        ,
+        -0.4732193 ,   0.        ,  -0.89303986,   0.        ,
+         0.        ,   0.        ,   0.        ,   0.67193101,
+         0.65640909,  -1.10672002,  -1.07754996])
+[ 2025-12-14 17:02:59,013 ] 97 werkzeug - INFO - 192.168.65.1 - - [14/Dec/2025 17:02:59] "POST /predictdata HTTP/1.1" 200 -

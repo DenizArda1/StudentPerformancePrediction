@@ -1,0 +1,13 @@
+[ 2025-12-14 11:33:43,614 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-12-14 11:33:43,619 ] 97 werkzeug - INFO -  * Debugger PIN: 713-699-141
+[ 2025-12-14 11:33:45,509 ] 26 root - INFO - Initiating data ingestion
+[ 2025-12-14 11:33:45,512 ] 29 root - INFO - Reading data is successful
+[ 2025-12-14 11:33:45,517 ] 33 root - INFO - Train Test Split initiated
+[ 2025-12-14 11:33:45,522 ] 38 root - INFO - Data ingestion is successfully completed
+[ 2025-12-14 11:33:45,524 ] 59 root - INFO - test_data and train_data loaded
+[ 2025-12-14 11:33:45,524 ] 35 root - INFO - Numerical columns scaled
+[ 2025-12-14 11:33:45,524 ] 43 root - INFO - Categorical columns encoded
+[ 2025-12-14 11:33:45,525 ] 70 root - INFO - Applying preprocessor on training data and testing data
+[ 2025-12-14 11:33:45,533 ] 77 root - INFO - Saving preprocessed data
+[ 2025-12-14 11:33:45,537 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 11:33:45] "GET /train HTTP/1.1" 200 -
+[ 2025-12-14 11:34:03,104 ] 97 werkzeug - INFO -  * Detected change in '/Users/denizardasanal/StudentPerformancePrediction/src/pipeline/training_pipeline.py', reloading

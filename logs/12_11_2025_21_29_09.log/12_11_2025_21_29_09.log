@@ -1,0 +1,7 @@
+[ 2025-12-11 21:29:09,593 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-12-11 21:29:09,598 ] 97 werkzeug - INFO -  * Debugger PIN: 100-572-141
+[ 2025-12-11 21:29:12,191 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 21:29:12] "GET / HTTP/1.1" 200 -
+[ 2025-12-11 21:29:17,245 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 21:29:17] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-11 21:29:30,845 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 21:29:30] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-11 21:29:47,188 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 21:29:47] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-11 21:30:21,271 ] 97 werkzeug - INFO -  * Detected change in '/Users/denizardasanal/MLProject/app.py', reloading

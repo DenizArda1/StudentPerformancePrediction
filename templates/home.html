@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        select, input {
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        select:focus, input:focus {
+            border-color: #23a6d5;
+            box-shadow: 0 0 8px rgba(35, 166, 213, 0.2);
+        }
+
+        .btn-submit {
+            grid-column: span 2;
+            padding: 15px;
+            background: linear-gradient(45deg, #23a6d5, #23d5ab);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(35, 213, 171, 0.4);
+        }
+
+        .btn-submit:active {
+            transform: scale(0.98);
+        }
+
+        .result-box {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #23a6d5;
+            display: none;
+        }
+
+        .result-box:not(:empty) {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @media (max-width: 600px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+            .full-width {
+                grid-column: span 1;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-graduation-cap fa-3x" style="color: #23a6d5; margin-bottom: 15px;"></i>
+            <h1>Student Performance Indicator</h1>
+            <p>Calculate the estimated Math score by entering the student details below.</p>
+        </div>
+
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+
+            <div class="form-group">
+                <label><i class="fas fa-venus-mars"></i> Gender</label>
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-users"></i> Race/Ethnicity</label>
+                <select name="ethnicity" required>
+                    <option value="" disabled selected>Select Group</option>
+                    <option value="group A">Group A</option>
+                    <option value="group B">Group B</option>
+                    <option value="group C">Group C</option>
+                    <option value="group D">Group D</option>
+                    <option value="group E">Group E</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-book-reader"></i> Parental Level of Education</label>
+                <select name="parental_level_of_education" required>
+                    <option value="" disabled selected>Select Education Level</option>
+                    <option value="associate's degree">Associate's Degree</option>
+                    <option value="bachelor's degree">Bachelor's Degree</option>
+                    <option value="high school">High School</option>
+                    <option value="master's degree">Master's Degree</option>
+                    <option value="some college">Some College</option>
+                    <option value="some high school">Some High School</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-utensils"></i> Lunch Type</label>
+                <select name="lunch" required>
+                    <option value="" disabled selected>Select Lunch Type</option>
+                    <option value="free/reduced">Free/Reduced</option>
+                    <option value="standard">Standard</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label><i class="fas fa-clipboard-check"></i> Test Preparation Course</label>
+                <select name="test_preparation_course" required>
+                    <option value="" disabled selected>Select Course Status</option>
+                    <option value="none">None</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-book-open"></i> Reading Score (0-100)</label>
+                <input type="number" name="reading_score" placeholder="Ex: 75" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-pen-nib"></i> Writing Score (0-100)</label>
+                <input type="number" name="writing_score" placeholder="Ex: 80" min="0" max="100" required>
+            </div>
+
+            <input class="btn-submit" type="submit" value="Predict Math Score">
+
+            {% if results %}
+            <div class="result-box">
+                <h2>Estimated Score: <span style="color: #e73c7e;">{{results}}</span></h2>
+                {% if explanation %}
+                  <h3 style="color: grey;">Most Important Factor: {{ explanation }}</h3>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </form>
+    </div>
+
+</body>
+</html>

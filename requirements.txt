@@ -1,0 +1,13 @@
+pandas==2.2.2
+numpy==1.26.4
+seaborn
+matplotlib
+scikit-learn==1.5.2
+catboost==1.2.5
+xgboost==2.0.3
+dill
+flask
+shap==0.45.1
+pydantic
+pytest
+#-e .

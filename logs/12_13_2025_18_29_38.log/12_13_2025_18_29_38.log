@@ -1,0 +1,42 @@
+[ 2025-12-13 18:29:38,421 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-12-13 18:29:38,425 ] 97 werkzeug - INFO -  * Debugger PIN: 601-599-574
+[ 2025-12-13 18:29:54,613 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 18:29:54] "GET / HTTP/1.1" 200 -
+[ 2025-12-13 18:29:55,960 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 18:29:55] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-13 18:30:06,906 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-13 18:30:06,906 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-13 18:30:06,906 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-13 18:30:06,924 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-13 18:30:06,926 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-13 18:30:06,926 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999998)
+[ 2025-12-13 18:30:06,927 ] 730 shap - INFO - phi = array([  9.4817842 , -12.48203258,  -3.5121423 ,  -3.49960094,
+         0.        ,   0.        ,   0.        ,  -0.93300796,
+         0.        ,   0.        ,  -0.98028847,   0.        ,
+         0.        ,   0.        ,   0.        ,  -1.1266184 ,
+        -1.13193486,  -1.15817568,  -1.14783436])
+[ 2025-12-13 18:30:06,928 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 18:30:06] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-13 18:30:23,153 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-13 18:30:23,154 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-13 18:30:23,154 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-13 18:30:23,169 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-13 18:30:23,171 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-13 18:30:23,171 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999997)
+[ 2025-12-13 18:30:23,173 ] 730 shap - INFO - phi = array([16.59412223, -4.36910623,  2.9690814 ,  2.95353734,  0.        ,
+        0.        , -0.81293606,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        , -1.64424349,  0.        ,  0.        ,
+        0.6167129 ,  0.60349863, -1.15278563, -1.18256114])
+[ 2025-12-13 18:30:23,174 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 18:30:23] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-13 18:30:39,696 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-13 18:30:39,696 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-13 18:30:39,696 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-13 18:30:39,711 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-13 18:30:39,714 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-13 18:30:39,714 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999998)
+[ 2025-12-13 18:30:39,715 ] 730 shap - INFO - phi = array([ 0.        , -8.73128909, -3.43692725, -3.46677838, -0.42297036,
+        0.        ,  0.        ,  0.        , -0.44910735,  0.        ,
+        0.        ,  0.        , -1.50917756,  0.        ,  0.        ,
+       -1.05572314, -1.03952621, -1.04349862, -1.03575733])
+[ 2025-12-13 18:30:39,716 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 18:30:39] "POST /predictdata HTTP/1.1" 200 -
+[ 2025-12-13 18:33:05,163 ] 97 werkzeug - INFO -  * Detected change in '/Users/denizardasanal/StudentPerformancePrediction/src/components/model_training.py', reloading

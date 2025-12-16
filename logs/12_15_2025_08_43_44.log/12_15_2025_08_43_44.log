@@ -1,0 +1,20 @@
+[ 2025-12-15 08:43:44,749 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+[ 2025-12-15 08:43:44,749 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-12-15 08:43:48,246 ] 97 werkzeug - INFO - 172.18.0.1 - - [15/Dec/2025 08:43:48] "GET / HTTP/1.1" 200 -
+[ 2025-12-15 08:43:56,633 ] 97 werkzeug - INFO - 172.18.0.1 - - [15/Dec/2025 08:43:56] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-15 08:44:15,164 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-15 08:44:15,164 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-15 08:44:15,164 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-15 08:44:15,187 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-15 08:44:15,196 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-15 08:44:15,197 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999998)
+[ 2025-12-15 08:44:15,204 ] 730 shap - INFO - phi = array([-17.59100643,  -2.86583263,   3.03857691,   3.05063228,
+         0.        ,   0.        ,   0.        ,   0.        ,
+        -0.48524526,   0.        ,  -0.90791843,   0.        ,
+         0.        ,   0.        ,   0.        ,   0.67660116,
+         0.66331876,  -1.0696248 ,  -1.05148838])
+[ 2025-12-15 08:44:15,205 ] 97 werkzeug - INFO - 172.18.0.1 - - [15/Dec/2025 08:44:15] "POST /predictdata HTTP/1.1" 200 -

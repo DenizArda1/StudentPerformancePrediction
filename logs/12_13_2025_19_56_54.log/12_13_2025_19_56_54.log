@@ -1,0 +1,23 @@
+[ 2025-12-13 19:56:54,686 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000
+[ 2025-12-13 19:56:54,687 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-12-13 19:56:54,687 ] 97 werkzeug - INFO -  * Restarting with stat
+[ 2025-12-13 19:56:55,256 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-12-13 19:56:55,260 ] 97 werkzeug - INFO -  * Debugger PIN: 601-599-574
+[ 2025-12-13 19:56:56,933 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 19:56:56] "GET / HTTP/1.1" 200 -
+[ 2025-12-13 19:56:59,315 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 19:56:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-12-13 19:57:00,448 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 19:57:00] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-12-13 19:57:10,892 ] 424 shap - INFO - num_full_subsets = 2
+[ 2025-12-13 19:57:10,892 ] 435 shap - INFO - remaining_weight_vector = array([0.21046803, 0.16837443, 0.14432094, 0.12951879, 0.12026745,
+       0.11480075, 0.11224962])
+[ 2025-12-13 19:57:10,892 ] 436 shap - INFO - num_paired_subset_sizes = 9
+[ 2025-12-13 19:57:10,901 ] 475 shap - INFO - weight_left = np.float64(0.5381032434909889)
+[ 2025-12-13 19:57:10,903 ] 648 shap - INFO - np.sum(w_aug) = np.float64(19.0)
+[ 2025-12-13 19:57:10,903 ] 649 shap - INFO - np.sum(self.kernelWeights) = np.float64(0.9999999999999998)
+[ 2025-12-13 19:57:10,904 ] 730 shap - INFO - phi = array([-1.22079178, -2.94459873,  2.95285158,  2.96136883,  0.        ,
+        0.        , -0.8345407 ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        , -1.61426734,  0.        ,  0.        ,
+        0.60224238,  0.58894099,  0.48052754,  0.48257662])
+[ 2025-12-13 19:57:10,905 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Dec/2025 19:57:10] "POST /predictdata HTTP/1.1" 200 -

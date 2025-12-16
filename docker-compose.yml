@@ -1,0 +1,12 @@
+services:
+  web-app:
+    build: .
+    container_name: student_performance_container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
